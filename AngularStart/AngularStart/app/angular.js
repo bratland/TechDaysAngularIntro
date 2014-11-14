@@ -1,21 +1,23 @@
-﻿var test = 1;
+﻿angular.module('app', ['bakery'])
+    .controller('DemoController', ['$scope', 'bakeryService',
+        function ($scope, bakeryService) {
+            //$scope.items = bakeryService.getPastry();
 
-angular.module('app', ['ngAnimate'])
+            $scope.delete = function(itemid) {
+                var oldItems = $scope.pastry;
+                $scope.pastry = [];
+                angular.forEach(oldItems, function(item) {
+                    if (item.Id != itemid) $scope.pastry.push(item);
+                });
+            };
 
-  .controller('demo', ['$scope', function ($scope) {
-    var counter = 4;
+            $scope.pastry = bakeryService.get().success(function(data) {
+                $scope.pastry = data;
+            } );
 
-      $scope.items = [{ id: 1, name: 'Anders' }, { id: 2, name: 'Mikael' }, { id: 3, name: 'Olle' }];
+        //$scope.add = function(name) {
+        //    $scope.items.push({ Id: counter++, name: name });
+        //}
+    }
+    ]);
 
-      $scope.delete = function (itemid) {
-          var oldItems = $scope.items;
-          $scope.items = [];
-          angular.forEach(oldItems, function (item) {
-              if (item.id != itemid) $scope.items.push(item);
-          });
-      };
-
-      $scope.add = function (name) {
-          $scope.items.push({ id: counter++, name: name });
-      }
-  }]);

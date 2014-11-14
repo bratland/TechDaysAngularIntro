@@ -2,6 +2,7 @@
 /// <reference path="../Scripts/angular-mocks.js" />
 /// <reference path="../Scripts/angular-resource.js" />
 /// <reference path="../Scripts/angular-animate.js" />
+/// <reference path="../Scripts/jasmine.js" />
 /// <reference path="../app/angular.js" />
 
 
@@ -9,12 +10,8 @@ describe('Controllers', function() {
 
     beforeEach(module('app'));
 
-    describe("Demo controller", function() {
+    //describe("Demo controller", function() {
         var ctrl, scope;
-
-        it('should have 2 items', function() {
-            expect(2).toBe(2);
-        });
 
         beforeEach(inject(function ($rootScope, $controller) {
             scope = $rootScope.$new();
@@ -34,4 +31,4 @@ describe('Controllers', function() {
             expect(scope.items.length).toBe(4);
         });
     });
-});
+//});

@@ -172,14 +172,30 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\angular.js" />
+    <Content Include="app\bakeryService.js" />
+    <Content Include="app\cakeTemplate.html" />
+    <Content Include="app\directives.js" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="css\jasmine.css" />
     <Content Include="Default.html" />
+    <Content Include="Demo.html" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\Products\bread.jpg" />
+    <Content Include="Images\Products\carrot_cake.jpg" />
+    <Content Include="Images\Products\chocolate_cake.jpg" />
+    <Content Include="Images\Products\cupcakes.jpg" />
+    <Content Include="Images\Products\lemon_tart.jpg" />
+    <Content Include="Images\Products\pear_tart.jpg" />
+    <Content Include="Images\Products\Thumbnails\bread.jpg" />
+    <Content Include="Images\Products\Thumbnails\carrot_cake.jpg" />
+    <Content Include="Images\Products\Thumbnails\chocolate_cake.jpg" />
+    <Content Include="Images\Products\Thumbnails\cupcakes.jpg" />
+    <Content Include="Images\Products\Thumbnails\lemon_tart.jpg" />
+    <Content Include="Images\Products\Thumbnails\pear_tart.jpg" />
     <Content Include="Scripts\angular-animate.js" />
     <Content Include="Scripts\angular-animate.min.js" />
     <Content Include="Scripts\angular-aria.js" />
@@ -216,6 +232,8 @@
     <Content Include="Scripts\angular-aria.min.js.map" />
     <Content Include="Scripts\angular-animate.min.js.map" />
     <Content Include="Scripts\angular.min.js.map" />
+    <Content Include="Images\Products\bread.jpg.bak" />
+    <Content Include="Images\Products\Thumbnails\Thumbs.db" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\i18n\angular-locale_aa-dj.js" />
     <Content Include="Scripts\i18n\angular-locale_aa-er.js" />
