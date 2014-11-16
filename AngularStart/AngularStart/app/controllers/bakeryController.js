@@ -1,5 +1,5 @@
 ﻿angular.module('app', ['bakery'])
-    .controller('DemoController', ['$scope', 'bakeryService',
+    .controller('BakeryController', ['$scope', 'bakeryService',
         function ($scope, bakeryService) {
             //$scope.items = bakeryService.getPastry();
 

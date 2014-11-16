@@ -4,31 +4,47 @@
 /// <reference path="../Scripts/angular-animate.js" />
 /// <reference path="../Scripts/jasmine.js" />
 /// <reference path="../app/angular.js" />
+/// <reference path="../app/bakeryService.js" />
 
 
-describe('Controllers', function() {
+describe('Controllers', function () {
 
-    beforeEach(module('app'));
+    beforeEach(function () {
+            angular.mock.module('bakery', []);
+            module('app', ['bakery']);
+        }
+    );
 
-    //describe("Demo controller", function() {
+    it('blah', function () {
+        expect({}).toBeDefined();
+    });
+
+
+    describe("Demo controller", function () {
         var ctrl, scope;
 
-        beforeEach(inject(function ($rootScope, $controller) {
+
+        it('blah2', function () {
+            expect({}).toBeDefined();
+        });
+
+        beforeEach(inject(function ($rootScope, $controller, bakeryService) {
             scope = $rootScope.$new();
-            ctrl = $controller('demo', { $scope: scope });
+            ctrl = $controller('DemoController', { $scope: scope, bakeryService: bakeryService });
         }));
 
-        it('should have scope defined', function() {
+        it('should have scope defined', function () {
             expect(scope).toBeDefined();
         });
 
-        it('should have 3 items', function() {
-            expect(scope.items.length).toBe(3);
-        });
+        //it('should have 3 items', function() {
+        //    expect(scope.items.length).toBe(3);
+        //});
 
-        it('Add adds one item ', function () {
-            scope.add({ id: 4, name: 'Rolf' });
-            expect(scope.items.length).toBe(4);
-        });
+        //it('Add adds one item ', function () {
+        //    scope.add({ id: 4, name: 'Rolf' });
+        //    expect(scope.items.length).toBe(4);
+        //});
     });
-//});
+});
+

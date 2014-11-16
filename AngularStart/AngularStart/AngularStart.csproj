@@ -171,15 +171,14 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="app\angular.js" />
-    <Content Include="app\bakeryService.js" />
-    <Content Include="app\cakeTemplate.html" />
-    <Content Include="app\directives.js" />
+    <Content Include="app\controllers\bakeryController.js" />
+    <Content Include="app\services\bakeryService.js" />
+    <Content Include="app\views\cakeTemplate.html" />
+    <Content Include="app\directives\directives.js" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="css\jasmine.css" />
     <Content Include="Default.html" />
-    <Content Include="Demo.html" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
