@@ -11,15 +11,3 @@
                 { "Id": 6, "Name": "Chokladkaka", "Description": "Rich chocolate frosting cover this chocolate lover’s dream.", "ImageName": "chocolate_cake.jpg", "Price": 9.0 }];
         };
     });
-
-angular.module.factory('cakeService', ['$http', cakeService]);
-function cakeService($http) {
-    var url = 'http://bakeryapi.azurewebsites.net/api/pastry/';
-    var service = {
-        get: function () {
-            return $http({ method: 'get', url: url });
-        }
-    };
-
-    return service;
-}
