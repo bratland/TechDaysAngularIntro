@@ -1,5 +1,5 @@
-﻿angular.module('app', ['bakery', 'ngAnimate'])
-    .controller('DemoController', ['$scope', 'bakeryService',
+﻿angular.module('app', ['bakery'])
+    .controller('BakeryController', ['$scope', 'bakeryService',
         function ($scope, bakeryService) {
 
             $scope.delete = function (itemid) {
@@ -15,5 +15,5 @@
             bakeryService.get().success(function (data) {
                 $scope.pastry = data;
             });
-        }
+    }
     ]);
