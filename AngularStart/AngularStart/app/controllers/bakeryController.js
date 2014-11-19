@@ -1,4 +1,4 @@
-﻿angular.module('app', ['bakery'])
+﻿angular.module('app', ['bakery', 'ngAnimate'])
     .controller('BakeryController', ['$scope', 'bakeryService',
         function ($scope, bakeryService) {
 
@@ -15,5 +15,5 @@
             bakeryService.get().success(function (data) {
                 $scope.pastry = data;
             });
-    }
+        }
     ]);

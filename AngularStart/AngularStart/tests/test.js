@@ -1,9 +1,9 @@
 ﻿/// <reference path="../Scripts/angular.js" />
 /// <reference path="../Scripts/angular-mocks.js" />
+/// <reference path="../Scripts/angular-animate.js" />
 /// <reference path="../Scripts/jasmine.js" />
-/// <reference path="../app/controllers/demoController.js" />
+/// <reference path="../app/controllers/bakeryController.js" />
 /// <reference path="../app/services/bakeryService.js" />
-
 
 describe('Controllers', function () {
 
@@ -13,7 +13,7 @@ describe('Controllers', function () {
 
     beforeEach(inject(function ($rootScope, $controller, bakeryService) {
         scope = $rootScope.$new();
-        ctrl = $controller('DemoController', { $scope: scope, bakeryService: bakeryService });
+        ctrl = $controller('BakeryController', { $scope: scope, bakeryService: bakeryService });
     }));
 
     it('should have scope defined', function () {
