@@ -2,6 +2,8 @@
     .controller('BakeryController', ['$scope', 'bakeryService',
         function ($scope, bakeryService) {
 
+            $scope.pastry = [];
+
             $scope.delete = function (itemid) {
                 var oldItems = $scope.pastry;
                 $scope.pastry = [];
@@ -9,8 +11,6 @@
                     if (item.Id != itemid) $scope.pastry.push(item);
                 });
             };
-
-            $scope.pastry = [];
 
             bakeryService.get().success(function (data) {
                 $scope.pastry = data;
