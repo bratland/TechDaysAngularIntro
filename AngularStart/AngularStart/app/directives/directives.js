@@ -1,7 +1,7 @@
 ﻿angular.module('app')
     .directive('cake', function () {
     return {
-        restrict: 'AEC',
+        restrict: 'EC',
         templateUrl: '/app/views/cakeTemplate.html',
         scope: { item: '=ngModel' }
     };

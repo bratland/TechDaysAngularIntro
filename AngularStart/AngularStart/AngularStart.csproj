@@ -172,6 +172,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\controllers\bakeryController.js" />
+    <Content Include="app\controllers\bakeryController.min.js">
+      <DependentUpon>bakeryController.js</DependentUpon>
+    </Content>
     <Content Include="app\services\bakeryService.js" />
     <Content Include="app\views\cakeTemplate.html" />
     <Content Include="app\directives\directives.js" />
@@ -234,6 +237,9 @@
     <Content Include="Scripts\angular.min.js.map" />
     <Content Include="Images\Products\bread.jpg.bak" />
     <Content Include="Images\Products\Thumbnails\Thumbs.db" />
+    <Content Include="app\controllers\bakeryController.min.js.map">
+      <DependentUpon>bakeryController.min.js</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\i18n\angular-locale_aa-dj.js" />
     <Content Include="Scripts\i18n\angular-locale_aa-er.js" />
