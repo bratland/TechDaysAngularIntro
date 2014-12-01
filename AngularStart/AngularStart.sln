@@ -7,6 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularStart", "AngularStar
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B2439769-A100-4A7D-83D2-D0813EF9665F}"
 	ProjectSection(SolutionItems) = preProject
+		..\AngularIntro.pptx = ..\AngularIntro.pptx
 		Körschema.txt = Körschema.txt
 	EndProjectSection
 EndProject
